@@ -1,4 +1,4 @@
-const CACHE = "ea-catering-v2";
+const CACHE_NAME = 'ea-nmw-v1';
 const BESTANDEN = ["./", "./index.html", "./styles.css", "./nac-logo.png"];
 
 self.addEventListener("install", (event) => {
