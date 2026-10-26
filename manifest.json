@@ -1,6 +1,3 @@
-{
-  "name": "EA NMW",
-  "short_name": "NMW",
-  "start_url": "/NMW/",
-  "display": "standalone"
-}
+"id": "/NMW/",
+"start_url": "/NMW/",
+"scope": "/NMW/"
