@@ -3,14 +3,27 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>EA NMW - Instructievideo's</title>
+
     <link rel="stylesheet" href="styles.css">
+
+    <!-- PWA -->
     <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#2563eb">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="EA NMW">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+
+    <meta name="theme-color" content="#2563eb">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="EA NMW">
+
+    <!-- App iconen -->
+    <link rel="apple-touch-icon" href="apple-touch-icon-optimized.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+    <!-- PWA icon -->
+    <link rel="icon" type="image/png" sizes="192x192" href="icon-192-optimized.png">
 </head>
 <body>
 
@@ -19,14 +32,24 @@
         <h1>EA NMW</h1>
         <p>Instructievideo's</p>
     </div>
-    <img src="Powered by DS2P zonder achtergrond.png" alt="" class="topbar-logo">
+    <img src="Powered by DS2P zonder achtergrond.png"
+         alt="Powered by DS2P"
+         class="topbar-logo">
 </header>
-<input id="zoekveld" type="search" placeholder="🔍 Zoek een video..." autocomplete="off" aria-label="Zoeken">
+
+<input
+    id="zoekveld"
+    type="search"
+    placeholder="🔍 Zoek een video..."
+    autocomplete="off"
+    aria-label="Zoeken">
 
 <p id="aantal" aria-live="polite"></p>
 
 <details class="categorie-paneel" id="categoriePaneel">
-    <summary class="categorie-kop" id="categorieKop">📚 KEUKENTECHNIEKEN</summary>
+    <summary class="categorie-kop" id="categorieKop">
+        Instructievideo's
+    </summary>
     <div class="categorie-menu" id="categorieMenu"></div>
 </details>
 
@@ -35,18 +58,34 @@
 <!-- Afspeelvenster -->
 <div id="videoModal" class="video-modal">
     <div class="video-modal-inner">
-        <button type="button" class="video-sluit" id="sluit" aria-label="Sluiten">✕</button>
+        <button
+            type="button"
+            class="video-sluit"
+            id="sluit"
+            aria-label="Sluiten">
+            ✕
+        </button>
+
         <div class="video-frame" id="videoFrame"></div>
-        <a id="videoExtern" class="video-extern" target="_blank" rel="noopener noreferrer">Bekijk op YouTube</a>
+
+        <a
+            id="videoExtern"
+            class="video-extern"
+            target="_blank"
+            rel="noopener noreferrer">
+            Bekijk op YouTube
+        </a>
     </div>
 </div>
 
 <script src="videos.js"></script>
 <script src="app.js"></script>
+
 <script>
 if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("./sw.js");
 }
 </script>
+
 </body>
 </html>
