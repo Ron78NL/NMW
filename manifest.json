@@ -1,11 +1,10 @@
 {
-  "name": "EA NMW – Instructievideo's",
-  "short_name": "EA NMW",
+  "name": "EA NMW",
+  "short_name": "NMW",
   "start_url": "./",
-  "scope": "./",
   "display": "standalone",
-  "background_color": "#e6f2ff",
   "theme_color": "#2563eb",
+  "background_color": "#ffffff",
   "icons": [
     {
       "src": "icon-192.png",
