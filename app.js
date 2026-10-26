@@ -9,7 +9,7 @@ const videoFrame = document.getElementById("videoFrame");
 const videoExtern = document.getElementById("videoExtern");
 const sluitKnop = document.getElementById("sluit");
 
-const standaardKop = "📚 KEUKENTECHNIEKEN";
+const standaardKop = "Instructievideo's";
 let geselecteerd = ""; // "" = alle categorieën
 
 // Zoeken negeert hoofdletters en accenten: "lieren" vindt "Liëren"
