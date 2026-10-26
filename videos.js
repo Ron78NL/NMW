@@ -2,17 +2,9 @@
 // Volgorde hier = volgorde van de knoppen.
 // id: intern, niet zichtbaar. naam: wat de leerling ziet.
 const categorieen = [
-  { id: "bouillons",            naam: "Bouillons" },
-  { id: "snijtechnieken",       naam: "Snijtechnieken" },
-  { id: "groenten-fruit",       naam: "Groenten & Fruit" },
-  { id: "vlees-vis",            naam: "Vlees & Vis" },
-  { id: "sauzen",               naam: "Sauzen" },
-  { id: "bereidingstechnieken", naam: "Bereidingstechnieken" },
-  { id: "keukenapparatuur",     naam: "Keukenapparatuur" },
-  { id: "bakkerij-dessert",     naam: "Bakkerij & Dessert" },
-  { id: "mise-en-place",        naam: "Mise en Place" },
-  { id: "kooktechnieken",       naam: "Kooktechnieken" },
-
+    { id: "intro", naam: "MDR Introductie" },
+    { id: "contact", naam: "Contactmijnen" },
+    { id: "invloed", naam: "Invloedsmijnen" }
 ];
 
 // ===== VIDEO'S =====
@@ -20,76 +12,17 @@ const categorieen = [
 // titel: wat de leerling ziet
 // categorie: een id uit de lijst hierboven
 const videos = [
-  { id: "stCqu0-vqB4", titel: "Instructie Reduceren van Bouillon", categorie: "bouillons" },
-  { id: "ABYB6CxNeVo", titel: "Instructie Degraisseren van Bouillon", categorie: "bouillons" },
-  { id: "KfdiOrQkN4U", titel: "Instructie Arrosseren", categorie: "bereidingstechnieken" },
-  { id: "KD_NEiQ8Lj4", titel: "Instructie Aanbraden", categorie: "vlees-vis" },
-  { id: "KcJeU7aODPY", titel: "Instructie Vacumeren", categorie: "bereidingstechnieken" },
-  { id: "7oi2S1cfILE", titel: "Instructie Ontzuren van Tomatenpuree", categorie: "bereidingstechnieken" },
-  { id: "U69i22cV-Ns", titel: "Instructie Myoteren van Kerrie", categorie: "bereidingstechnieken" },
-  { id: "aLfP0g9VvQA", titel: "Instructie Karamelliseren", categorie: "bereidingstechnieken" },
-  { id: "VrBw-bB9ZK0", titel: "Instructie Fruiten en aanzweten magere mirepoix", categorie: "bereidingstechnieken" },
-  { id: "VISP2VEdlMs", titel: "Instructie En Papillote", categorie: "bereidingstechnieken" },
-  { id: "TFc8r3EYGGo", titel: "Instructie Barderen, Larderen en Pikeren", categorie: "vlees-vis" },
-  { id: "dckCb_fxdGY", titel: "Instructie Klaren van Boter", categorie: "bereidingstechnieken" },
-  { id: "M3ThiVgcfj4", titel: "Instructie Smelten van Boter", categorie: "bereidingstechnieken" },
-  { id: "3Z9BISrZ3uA", titel: "Instructie gebruik Robotcoupe", categorie: "keukenapparatuur" },
-  { id: "YlsdetvnrUY", titel: "Instructiefilm Snijden van Kaas met de snijmachine", categorie: "keukenapparatuur" },
-  { id: "oR1iPJgytbM", titel: "Instructie Ontpitten van Mango, Perzik en Kersen", categorie: "groenten-fruit" },
-  { id: "rFt79XOHlPQ", titel: "Instructie Bloemen van Schnitzels", categorie: "vlees-vis" },
-  { id: "fxvBGpmQMt4", titel: "Instructie marineren van Varkenshaas", categorie: "vlees-vis" },
-  { id: "fEN31QGGx5M", titel: "Instructie Doorwrijven vruchtencoulis", categorie: "sauzen" },
-  { id: "ugkUzNX4qkM", titel: "Instructie mengen Sla en Dressing", categorie: "mise-en-place" },
-  { id: "Jw1CXHBeEKQ", titel: "Instructie spatelen van chocomousse", categorie: "bakkerij-dessert" },
-  { id: "oZN70meOUyg", titel: "Instructie Zeven van bloem", categorie: "bakkerij-dessert" },
-  { id: "fD_Gpiukchw", titel: "Instructie uitsteken van deeg", categorie: "bakkerij-dessert" },
-  { id: "U1l0h9y-Gsc", titel: "Instructie Spuiten met spuitzak", categorie: "bakkerij-dessert" },
-  { id: "0QoFjfehnes", titel: "Instructie opkloppen van slagroom", categorie: "bakkerij-dessert" },
-  { id: "NJrNRkHI2tw", titel: "Instructie Schillen van Asperges", categorie: "groenten-fruit" },
-  { id: "m0cK_Pge9wk", titel: "Instructie uitsnijden van sinaasappel", categorie: "groenten-fruit" },
-  { id: "Rk_B5yyO0Mw", titel: "Instructie uitboren van appel", categorie: "groenten-fruit" },
-  { id: "Axz_LhRS3pk", titel: "Instructie Canneleren van citroen", categorie: "groenten-fruit" },
-  { id: "Rv_Yq7ka_lU", titel: "Instructie Raspen", categorie: "snijtechnieken" },
-  { id: "BoRaJGuFCWY", titel: "Instructie Hakken van Peterselie", categorie: "snijtechnieken" },
-  { id: "jMmrwCJZpAY", titel: "Instructie Snipperen van Ui", categorie: "snijtechnieken" },
-  { id: "t1qnTkSJ8Uk", titel: "Instructiefilm Wassen van sla", categorie: "mise-en-place" },
-  { id: "xmc2JEyu6LM", titel: "Instructiefilm Bouillon maken", categorie: "bouillons" },
-  { id: "AZHcylydIks", titel: "Instructie Monderen", categorie: "bereidingstechnieken" },
-  { id: "q9zlcYsxeuU", titel: "Instructie Chinoise", categorie: "bouillons" },
-  { id: "JQjxhGzwTrA", titel: "Instructie Basis snijtechnieken", categorie: "snijtechnieken" },
-  { id: "-ylpJWBs77M", titel: "Instructie Afwegen van ingrediënten", categorie: "mise-en-place" },
-  { id: "WBYYse9ZKNI", titel: "Instructie Afmeten vloeistoffen", categorie: "mise-en-place" },
-  { id: "Qgf6An9WMvo", titel: "Instructie Aardappelboor", categorie: "keukenapparatuur" },
-  { id: "lUBiJRLJy_Q", titel: "Instructie Tourneren van Aardappelen", categorie: "bereidingstechnieken" },
-  { id: "pC1JnpVI1so", titel: "Instructie Brunoise snijden", categorie: "snijtechnieken" },
-  { id: "ulr4q5Shu4s", titel: "Instructie Schaven", categorie: "snijtechnieken" },
-  { id: "-RRZmj3fFmA", titel: "Instructie Pureren", categorie: "bereidingstechnieken" },
-  { id: "xDr0W8D6jh0", titel: "Instructie Julienne snijden", categorie: "snijtechnieken" },
-  { id: "95pwbgIikZk", titel: "Instructie Dressing maken", categorie: "sauzen" },
-  { id: "OTUE7Q4Mdxo", titel: "Instructie Ciseleren", categorie: "snijtechnieken" },
-  { id: "qwHLqZHukIo", titel: "Instructie Afschuimen", categorie: "bouillons" },
-  { id: "hi6CqhmMddQ", titel: "Instructie Afblussen", categorie: "sauzen" },
-  { id: "OrcQfrNCZ4Q", titel: "Instructie Deglaceren", categorie: "sauzen" },
-  { id: "C9kixHqbfCQ", titel: "Instructie Monteren", categorie: "sauzen" },
-  { id: "5xnvjpNWbAI", titel: "Instructie Liëren van soep", categorie: "sauzen" },
-  { id: "gKrq70jGDEQ", titel: "Instructie Passeren van Bouillon", categorie: "bouillons" },
-  { id: "xvUjkwQDof8", titel: "Instructie Plukken van Makreel", categorie: "vlees-vis" },
-  { id: "GFBYaEPDNTs", titel: "Instructie Gratineren", categorie: "kooktechnieken" },
-  { id: "Ldb7AaovObI", titel: "Instructie Stoven", categorie: "kooktechnieken" },
-  { id: "6PDbjrgW5aI", titel: "Instructie Stomen", categorie: "kooktechnieken" },
-  { id: "GjyeDdybnro", titel: "Instructie Smoren", categorie: "kooktechnieken" },
-  { id: "C3C1W4pzi5Q", titel: "Instructie Sauteren", categorie: "kooktechnieken" },
-  { id: "qYlIKLi2IwQ", titel: "Instructie Pocheren", categorie: "kooktechnieken" },
-  { id: "6H4q4NoxXgY", titel: "Instructie Koken", categorie: "kooktechnieken" },
-  { id: "A9fCmhR9BFk", titel: "Instructie Grillen", categorie: "kooktechnieken" },
-  { id: "C9CLgA3OFZU", titel: "Instructie Glaceren", categorie: "kooktechnieken" },
-  { id: "hKBAmmxugFU", titel: "Instructie Frituren", categorie: "kooktechnieken" },
-  { id: "9HVRGojIZEU", titel: "Instructie Braden", categorie: "kooktechnieken" },
-  { id: "mFJ6VlAvxB4", titel: "Instructie Blancheren", categorie: "kooktechnieken" },
-  { id: "872YfwIce1k", titel: "Instructie Braadbak", categorie: "keukenapparatuur" },
-  { id: "-zx5q3zRwXA", titel: "Instructie Combisteamer", categorie: "keukenapparatuur" },
-  { id: "YD-m2O-spNY", titel: "Instructie Friteuse", categorie: "keukenapparatuur" },
-  { id: "zQxBPtGgLsk", titel: "Instructie Kookketel", categorie: "keukenapparatuur" },
-  { id: "_ILm2zaaYYc", titel: "Instructie Roux bereiden", categorie: "keukenapparatuur" },
-  { id: "3gY1bGEUtm4", titel: "Instructie Koffiepercolator", categorie: "keukenapparatuur" },
-];  
+
+    //@MDR INTRODUCTIE
+    { id: "ie9zJ9sSdFc", titel: "MDR Introfilm FR", categorie: "intro" },
+
+    //@CONTACTMIJNEN
+    { id: "sPdkjUi8aUY", titel: "Mines terrestres / Grondmijnen FR", categorie: "contact" },
+    { id: "VXo-F4G7Ais", titel: "Mines flottantes / Drijvende mijnen FR", categorie: "contact" },
+    { id: "TcZv4BSV5vk", titel: "Mines ancrées / Verankerde mijnen FR", categorie: "contact" },
+    { id: "5fQvyYfCIgA", titel: "Mines d'entraînement / Oefenmijnen FR", categorie: "contact" },
+
+    //@INVLOEDSMIJNEN
+    { id: "TR8JqrFMIp4", titel: "Mine aérienne - Différentes mines d'influence FR", categorie: "invloed" }
+
+];
