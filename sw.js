@@ -1,5 +1,13 @@
-const CACHE_NAME = 'ea-nmw-v1';
-const BESTANDEN = ["./", "./index.html", "./styles.css", "./nac-logo.png"];
+const CACHE = "ea-nmw-v2";
+const BESTANDEN = [
+    "./",
+    "./index.html",
+    "./styles.css",
+    "./app.js",
+    "./videos.js",
+    "./nac-logo.png",
+    "./icon-192-optimized.png"
+];
 
 self.addEventListener("install", (event) => {
     event.waitUntil(caches.open(CACHE).then((c) => c.addAll(BESTANDEN)));
@@ -15,7 +23,6 @@ self.addEventListener("activate", (event) => {
     self.clients.claim();
 });
 
-// Eerst het netwerk, bij geen verbinding de cache
 self.addEventListener("fetch", (event) => {
     if (event.request.method !== "GET") return;
     event.respondWith(
